@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document00</title>
+    <style>
+        .container{
+            background-color: rgb(180, 214, 186);
+            margin: 30px 200px;
+            display: flex;
+            justify-content: space-between;
+            height: 70vb;
+            gap: 10px;
+        }
+        .left{
+            width: 25%;
+            background-color: brown;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            color:white;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        .right{
+            width: 75%;
+            background-color: rgb(151, 120, 83);
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            color: wheat;
+            font-size: 40px;
+            border-radius: 20px;
+        }
+        @media screen and (max-width:576px) {
+            grid-template-columns:repeat(1, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

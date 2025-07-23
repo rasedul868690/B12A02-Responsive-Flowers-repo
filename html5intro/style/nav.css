@@ -1,0 +1,32 @@
+nav ul {
+    display: flex;
+
+}
+nav li {
+    list-style: none;
+    margin-right: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    background-color: lightgray;
+    padding: 1px;
+}
+
+
+
+ 
+.container{
+background-color: blanchedalmond;
+
+}
+.content{
+    background-color: aquamarine;
+    font-size: 2em;
+    max-width: 75%;
+    margin: 0 auto;
+    padding:30px;
+}
+    

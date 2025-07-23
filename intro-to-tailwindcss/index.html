@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Intro to Tailwind CSS</title>
+</head>
+<body>
+    <h1 class="text-7xl">Intro to Tailwind </h1>
+    <h3 class="text-3xl">Exploringt CSS via Utility Class</h3>
+    <p class="underline">This si excitig</p>
+    <p class="border-2">This si excitig</p>
+    <p class="underline">This si excitig</p>
+    <p class="underline">This si excitig</p>
+    <p class="underline bg-red-500">This si excitig</p>
+    <p class="underline bg-green-500">This si excitig</p>
+    <p class="underline bg-blue-500">This si excitig</p>
+    <p class="text-center font-bold bg-linear-to-bl from-violet-500 to-fuchsia-500">I an exploring tailwind</p>
+
+
+    <section class="max-w-6xl border-2 mx-auto">
+        <h3>My section title</h3>
+        <h3 class="text-3xl border m-4">My section title</h3>
+        <p class="border p-12 text-orange-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et modi enim assumenda expedita non possimus voluptate minima dolores, quidem dolorum quam voluptatum sed ratione perferendis unde magnam veritatis! Ratione totam iusto iure doloribus eligendi quas accusamus inventore odio facilis quaerat labore, porro nam officiis similique est maxime, a deleniti culpa aut! Obcaecati odio dicta, nemo voluptas odit natus veniam beatae dignissimos neque, repudiandae a excepturi molestias est, harum sequi consequatur ullam nostrum quam sapiente atque dolorem. In ipsa itaque amet distinctio eos quibusdam voluptates iure neque, provident nostrum quo dolorem sunt debitis odio beatae eligendi. Reiciendis nobis tempore quo laborum!</p>
+        
+    </section>
+    <section class="bg-red-300 md:bg-green-500 lg:bg-yellow-500">
+        <h3 class="text-3xl">My Responsive section</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iusto doloribus unde, necessitatibus corrupti fuga iure, aperiam quia modi, officia similique sequi molestias totam consequatur voluptas nobis aliquam repellat recusandae?
+        </p>
+    </section>
+    <!--Flex layout-->
+    <section class="lg:flex">
+        <div class="w-96 h-32 text-3xl bg-purple-400 border-4 border-red-900">Item 1</div>
+        <div class="w-96 h-32 text-3xl bg-purple-400 border-4 border-red-900">Item 2</div>
+        <div class="w-96 h-32 text-3xl bg-purple-400 border-4 border-red-900">Item 3</div>
+        <div class="w-96 h-32 text-3xl bg-purple-400 border-4 border-red-900">Item 4</div>
+    </section>
+    <section class="flex justify-normal">
+        <div class="w-24 h-24 text-3xl bg-purple-400 border-4 border-red-900">Item 11</div>
+        <div class="w-24 h-24 text-3xl bg-purple-400 border-4 border-red-900">Item 12</div>
+        <div class="w-24 h-24 text-3xl bg-purple-400 border-4 border-red-900">Item 13</div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8">
+        
+        <div class="bg-pink-300 text-2xl">box-1</div>
+        <div class="bg-pink-300 text-2xl">box-2</div>
+        <div class="bg-pink-300 text-2xl">box-3</div>
+        <div class="xl:row-span-4 bg-pink-300 text-2xl">box-4</div>
+        <div class="col-span-2 bg-pink-300 text-2xl">box-5</div>
+        <div class="bg-pink-300 text-2xl">box-6</div>
+        <div class="lg:col-span-3 bg-pink-300 text-2xl">box-7</div>
+        <div class="bg-pink-300 text-2xl">box-8</div>
+        <div class="bg-pink-300 text-2xl">box-9</div>
+        <div class="bg-pink-300 text-2xl">box-10</div>
+        <div class="bg-pink-300 text-2xl">box-11</div>
+        <div class="bg-pink-300 text-2xl">box-12</div>
+    </section>
+    <section>
+        <h3 class="text-7xl bg-cyan-500 m-48">Some text</h3>
+    </section>
+</body>
+</html>
+
