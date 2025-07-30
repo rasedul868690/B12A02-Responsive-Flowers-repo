@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>My Webside</title>
     <link rel="stylesheet" href="styles/repo.css">
 </head>
@@ -20,7 +21,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="flex-right">
+        <div class="header-flex mt-6">
             <div class="header">
                 <h2>ALWAYS <span class="orange">FRESH<span></h2>
                 <h2 class="orange">FLOWERS</h2>
@@ -30,13 +31,156 @@
             </div>
         </div>
     </header>
-    <section>
-        <div>
-            <h2>Our Plants</h2>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-            <img src="images/sample-flower-image.png" alt="">
-            <button>ADD TO CART</button>
+
+    <section class="Plants">
+         
+        <h2 class="my-8 text-center text-5xl"><span class="orange"> Our </span> Plants</h2>
+        <p class="text-center text-2xl m-10 text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. From<br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    
+        <div class="Plant-container">
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+              <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
+            <div class="Plant">
+                <img src="images/sample-flower-image.png" alt="">
+                <p class="text-center mt-3">Lily Blossom</p>
+                <h4 class="text-center font-bold m-2">20 USD</h4>
+                <button class="bnt-primary">ADD TO CART</button>
+            </div>
         </div>
     </section>
+
+    <section class="flower-container mt-10">
+        <div class="flower-img">
+            <img src="images/flower-store.png" alt="">
+        </div>
+        <div class="flower-root">
+            <h3 class="text-[40px] font-bold font-Noto Serif">Flower & Plants <br>Lover</h3>
+            <ul>
+                <li class="list-disc text-gray-500 text-[22px] font-inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li class="list-disc text-gray-500 text-[22px] font-inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li class="list-disc text-gray-500 text-[22px] font-inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Latest Deals-->
+    <section class="deals-section">
+		<div class="heading">
+		  <h1><span class="highlight">Latest</span> Deals</h1>
+		  <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+		</div>
+		
+		<div class="deals-container">
+		  <div class="left-cards">
+			<div class="card small" style="background-image: url('images/deal-bloom.png');">
+			  <div class="overlay">
+				<h4>60% Off | Bloom Plant</h4>
+				<a href="#">Shop Now</a>
+			  </div>
+			</div>
+			<div class="card small" style="background-image: url('images/deal-ana.png');">
+			  <div class="overlay">
+				<h4>30% Off | Ana Plant</h4>
+				<a href="#">Shop Now</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="card large" style="background-image: url('images/deal-zabo.png');">
+			<div class="overlay">
+			  <h2>25% Off | Zabo Plant</h2>
+			  <a href="#">Shop Now</a>
+			</div>
+		  </div>
+
+		</div>
+    </section>
+
+    <section class="newsletter">
+		<div class="overlay">
+		  <h2>Join the colorful Bunch</h2>
+		  <div class="form-group">
+			<input type="email" placeholder="Write email" />
+			<button>Subscribe</button>
+		  </div>
+		</div>
+	</section>
+
+      <!-- Footer Section -->
+  <footer class="bg-inherit">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.png" alt="">
+        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+            <h4>Home</h4>
+            <ul>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Features</h4>
+            <ul>
+                <li>Pricing</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Help Center</li>
+            </ul>
+        </div>
+        <div class="socials">
+          <a href="#"><img src="images/icon-linkedin.png" alt=""></a>
+          <a href="#"><img src="images/icon-twitter.png" alt=""></a>
+          <a href="https://www.facebook.com/"><img src="images/icon-facebook.png" alt=""></a>
+          <a href="https://www.youtube.com/"><img src="images/icon-youtube.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
