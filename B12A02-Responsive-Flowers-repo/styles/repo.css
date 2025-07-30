@@ -5,6 +5,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #eef3fa;
 }
+
 /*shared */
 .fc-color{
     color: #8987A1;
@@ -12,7 +13,6 @@ body {
 .orange{
     color: #E95A08;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -30,11 +30,18 @@ nav ul li{
 nav li a{
     text-decoration: none;
 }
+.cart{
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
 .header-flex{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 100px 270px 0px 270px;
-
+    max-width: 980px;
+    margin:0 auto;
 }
 .header{
     margin-top: 150px;
@@ -42,35 +49,127 @@ nav li a{
     font-size: 20px;
     font-family: Noto Serif;
 }
-.Plant-container{
-    display: grid;
-    gap:20px;
-    grid-template-columns:repeat(4, 1fr);
-    margin: 0px 350px 0px 250px;
+
+/*Our Plants*/
+.product-section {
+  padding: 5px 5px;
+  text-align: center;
+  max-width: 980px;
+  margin: 100px auto;
+  background-color: #eef3fa;
 }
-.bnt-primary{
-    background-color: #E95A08;
-    color:white;
-    font-size: 16px;
-    font-weight: 400;
-    width: 230px;
-    padding: 10px 10px;
-    border: none;
+.product-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
 }
-.flower-container{
-    display: grid;
-    gap:60px;
-    grid-template-columns:repeat(2, 1fr);
-    margin: 200px 300px 0px 250px;
-   
+.product-section h2 span {
+  color: #ff4d00; /* Orange "Our" */
+}
+.description {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  color: #555;
+  font-size: 16px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 5px;
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px;
+  text-align: center;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.08);*/
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+.product-card .price {
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+.product-card button {
+  background-color: #ff5c00;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+.product-card button:hover {
+  background-color: #e04d00;
 }
 
+/*Flower & Plants Lover*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 100px auto;
+  background-color: #eef3fa;
+}
+.image-section {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content-section {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  background-color: #eef3fa;
+}
+.badge {
+  width: 200px;
+  position: absolute;
+  top: -80px;
+  left: -120px;
+}
+h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #222;
+  font-weight: bold;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  list-style: circle;
+  color: #555;
+}
 
-/*Latest Deals*/
+/* Deals Section */
 .deals-section {
-  padding: 40px 20px;
+  padding: 10px 10px;
   text-align: center;
   font-family: Noto Serif;
+  margin-top: -100px;
 }
 .heading h1 {
   font-size: 36px;
@@ -133,9 +232,6 @@ nav li a{
   height: 320px;
 }
 
-
-
-
 /* Newsletter Section */
 .newsletter {
   background-image: url('../images/news-letter-bg.png');
@@ -178,17 +274,12 @@ nav li a{
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
-
-
-
-
-
-
-
+.text{
+  color:#555
+}
 
 /* Footer Section */
 footer {
-    background-color: #ffffff;
     padding: 50px 20px;
     border-top: 1px solid #ddd;
 }
@@ -196,20 +287,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 950px;
-    margin: auto;
-}
-.footer-left {
-    max-width: 250px;
-    margin-bottom: 20px;
+    max-width: 980px;
+    margin:0 auto;
 }
 .footer-left p {
-    font-size: 16px;
     color: #555;
-    margin-top: 10px;
 }
 .footer-links {
-    display: flex;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -219,12 +303,12 @@ footer {
     color: #333;
 }
 .footer-links ul {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
 .footer-links ul li {
     margin-bottom: 8px;
+    list-style: none;
     color: #555;
     font-size: 14px;
     cursor: pointer;
@@ -236,17 +320,27 @@ footer {
     transition: color 0.3s;
 }
 .footer-links :hover {
-    olor: blue;
+    color: blue;
 }
 .socials a{
     display: inline-block;
     gap: 50px; 
 }
 
-    
 
 
+  @media (min-width: 576px) {
+      .header-bg img,
+      .cart,
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
 
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
 
 
 
